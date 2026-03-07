@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="school.css" rel="stylesheet">
+    <script src="scripts/showdate.js" defer></script>
+    
+    <title>Course Management</title>
+</head>
+<body>
+    <section id="cover-page">
+        <div class="cover-content">
+            <h1>School of Rock</h1>
+            <h3>Course Management System</h3>
+        </div>
+    </section>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="student.html">Student Portal Login</a>
+      <a href="teacher.html">Teacher Portal Login</a>
+    </nav>
+
+    <div id="wrapper">
+        <main>
+            <section>
+                <h2>Course List.</h2>
+                <p>Paragraph 1</p>
+            </section>
+
+            <div id="courseList">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Course</th>
+                            <th>Credit Hours</th>
+                            <th>Teacher</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="list_of_class"></tbody>
+                </table>
+            </div>
+        </main>
+
+        <div>
+            <input type="button" value="LogOut" id="logout">
+        </div>
+
+        <footer>
+            Copyright © 2026 This is a School Project
+        </footer>
+    </div>
+</body>
+</html>

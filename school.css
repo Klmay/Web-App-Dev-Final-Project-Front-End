@@ -14,6 +14,44 @@ body {
     color: #000000;
     font-size: 1em;
 }
+
+#cover-page {
+    height: 40vh;
+    width: 100%;
+    background-image: url("https://www.usailighting.com/stuff/contentmgr/files/1/dfca4cc28c16ad43e981aafb02972da7/image/_resized/5.0E-6_900_600_new_building_outside_in_dark.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+}
+
+#cover-page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.cover-content {
+    position: relative; 
+    z-index: 2;
+}
+
+.cover-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.cover-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
 main {
     width: 100%;
     max-width: 800px;
@@ -29,7 +67,7 @@ header {
     box-shadow: 0 2px 6px rgba(0,0,0,0.25);
 }
 
-h1, h2 {
+h1, h3 {
     text-align: center;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -132,19 +170,16 @@ table {
     overflow: hidden;
 }
 
-td, th 
-{
+td, th {
     padding: 15px;
     border: 1px solid #033507;
 }
 
-td
-{
+td {
     text-align: center;
 }
 
-.text
-{
+.text {
     text-align: center;
 }
 
