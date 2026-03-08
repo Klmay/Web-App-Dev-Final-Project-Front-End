@@ -32,7 +32,7 @@ addEventListener("DOMContentLoaded", async function () {
 
             if (response.ok) {
                 userChest = await response.json();
-                alert("New chest created");
+               // alert("New chest created");
             } else {
                 const err = await response.json();
                 document.querySelector("#error").innerHTML = err.error || "Cannot add chest";
